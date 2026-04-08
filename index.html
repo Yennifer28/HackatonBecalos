@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Health AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Semáforo de Riesgo de Cliente</h1>
+
+  <div class="form">
+    <label>Nivel de servicio (0-100)</label>
+    <input type="number" id="servicio">
+
+    <label>Puntualidad (0-100)</label>
+    <input type="number" id="puntualidad">
+
+    <label>NPS (-100 a 100)</label>
+    <input type="number" id="nps">
+
+    <label>Quejas abiertas</label>
+    <input type="number" id="quejas">
+
+    <button onclick="evaluar()">Evaluar Cliente</button>
+  </div>
+
+  <div id="resultado" class="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
